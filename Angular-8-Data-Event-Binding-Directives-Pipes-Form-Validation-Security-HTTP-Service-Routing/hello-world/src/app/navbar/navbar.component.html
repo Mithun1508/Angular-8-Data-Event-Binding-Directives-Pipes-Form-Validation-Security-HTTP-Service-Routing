@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="">Angular</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li routerLinkActive="active current">
+        <a class="nav-link" routerLink="/followers"
+        [queryParams]="{page : 1, order:'newest'}" >Followers <span class="sr-only">(current)</span></a>
+      </li>
+      <li routerLinkActive="active current">
+        <a class="nav-link" routerLink="/posts">Posts</a>
+      </li>
+      <li  routerLinkActive="active current">
+        <a class="nav-link" routerLink="/signup">Signup Forms</a>
+      </li>
+      <li routerLinkActive="active current">
+        <a class="nav-link" routerLink="/contact">Contact-form</a>
+      </li>
+      <li  routerLinkActive="active current">
+        <a class="nav-link" routerLink="/course">Course</a>
+      </li>
+    
+    </ul>
+  </div>
+</nav>
